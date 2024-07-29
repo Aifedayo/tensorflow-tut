@@ -13,6 +13,8 @@ x = tf.ones((3, 3))
 x = tf.zeros((2, 3))
 
 x = tf.eye(2) # I for identity matrix
+x = tf.random.normal((3,3,4), mean=0, stddev=1)
 
+x = tf.random.uniform((1,3), minval=0, maxval=1)
 
 print(x)
