@@ -18,4 +18,8 @@ x = tf.random.normal((3,3,4), mean=0, stddev=1)
 x = tf.random.uniform((1,3), minval=0, maxval=1)
 x = tf.range(start=1, limit=10, delta=2)
 
+x = tf.cast(x, dtype=tf.float64)
+# Specify the dtype you want
+# tf.float(16,32,64)  tf.int(8,16,32,64), tf.bool
+
 print(x)
